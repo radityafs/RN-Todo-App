@@ -18,3 +18,10 @@ This is a simple TO DO app built with React Native. It is a simple app that allo
 - Run `npm install` or `yarn install`
 - Run `npm start` or `yarn start`
 - Run `npm run android` or `yarn android`
+
+## Libraries
+
+[React Native](https://reactnative.dev/)
+[Expo](https://expo.io/)
+[Font Awesome](https://fontawesome.com/)
+[Date Picker Modern](https://www.npmjs.com/package/react-native-date-picker-modern)

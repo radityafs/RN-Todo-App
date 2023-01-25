@@ -66,6 +66,12 @@ export default function modalTask(props) {
 
   useEffect(() => {
     setModalVisible(visible);
+
+    setError({
+      title: "",
+      description: "",
+      date: "",
+    });
   }, [visible]);
 
   return (
@@ -108,7 +114,9 @@ export default function modalTask(props) {
 
         {!isDatePick && (
           <>
-            <Text style={styles.modalText}>Add a new Task</Text>
+            <Text style={styles.modalText}>
+              {selectedData?.id ? "Edit Task" : "Add Task"}
+            </Text>
 
             <Text
               style={{
@@ -219,7 +227,7 @@ export default function modalTask(props) {
               }}
             >
               <Text style={{ color: "#fff", textAlign: "center" }}>
-                Add Task
+                {selectedData?.id ? "Update Task" : "Add Task"}
               </Text>
             </TouchableOpacity>
           </>
